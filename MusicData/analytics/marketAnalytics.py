@@ -1,0 +1,72 @@
+#%% # tag to run as Jupyter notebook 
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 4 08:36:26 2022
+@author: Philipp Ackermann
+
+ANALYTICS OF US MUSIC MARKET
+"""
+
+# libraries
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV/JSON file I/O
+
+# ---- data prep ----
+
+# load data frame
+df = pd.read_csv('../data/USMusicMarket.csv', header=0, encoding='utf8') # get dataframe
+
+print("Analyze USMusicMarket.csv")
+print("===========================")
+df.info()
+print(df.describe())
+
+first20 = df.head(20)
+print("\nFirst 20 entries:")
+print(first20)
+
+# missing data?
+print("\nMissing data:")
+print(df.isnull().sum())
+
+# missing values?
+print("\nMisssing values:")
+
+for i in df.columns:
+    null_rate = df[i].isna().sum() / len(df) * 100 
+    empty_rate = df[i].eq('').sum() / len(df) * 100
+    if null_rate > 0:
+        print("{} null rate: {}%".format(i,round(null_rate,2)))
+    if empty_rate > 0:
+        print("{} empty rate: {}%".format(i,round(empty_rate,2)))
+
+# ---- feature engineering ----
+
+# analyse overall market revenue
+print('\Analyse overall market revenue:')
+revenues = df.groupby('year')['value'].sum()
+#print(revenues)
+revenues.plot.bar(figsize=(10, 14), title='Revenue of US Recordings in Mio $')
+
+# analyse revenue per format
+formats = df.groupby(['format', 'year'])['value'].sum().unstack().T
+#print(formats.head(10))
+formats.plot.bar(stacked=True, figsize=(10, 14), title='Revenue of US Recordings per Forrmat in Mio $')
+
+# aggregate formats related to music albums
+formats['Vinyl'] = formats['LP/EP'] + formats['Vinyl Single']
+formats['Compact Disc'] = formats['CD'] + formats['CD Single']
+formats['Music Casssette'] = formats['Cassette'] + formats['Cassette Single']
+formats['Download'] = formats['Download Album'] + formats['Download Single'] + formats['SoundExchange Distributions']
+formats['Streaming'] = formats['Limited Tier Paid Subscription'] + formats['On-Demand Streaming (Ad-Supported)'] + formats['Other Ad-Supported Streaming'] + formats['Paid Subscription']
+
+filtered = formats[['Vinyl', 'Music Casssette', 'Compact Disc', 'Download', 'Streaming']]
+filtered.plot.area(stacked=True, figsize=(10, 8), title='Revenue of US Music Recordings per Media in Mio $')
+
+# Percentage of music market
+year_total = filtered.sum(axis='columns')
+format_pct = filtered.div(year_total, axis='index')
+format_pct.plot.area(stacked=True, figsize=(10, 5), title='Media Percentage of US Music Recordings')
+
+# %%
