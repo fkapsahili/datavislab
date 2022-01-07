@@ -19,7 +19,7 @@ The data provided for this lab work is collected and prepared by the author and 
 
 - by the data available at the time of acquiring it
 - by the data that was available for free (Open Data)
-- by personal music style preferrences
+- by personal music style preferences
 
 Any message deduced from this data does therefore not reflect universal facts but are only valid for the scope of the current data.
 
@@ -38,7 +38,7 @@ ArtistInfo is available as App for iOS and macOS as well as a Web front-end at [
   - Web: https://music.metason.net/famousArtists.html
 - Data was collected in 2019 by Web crawling of
   - top100 lists of music community Web sites
-- More details on Atists is available via
+- More details on Artists is available via
   - Universal URL: https://music.metason.net/artistinfo?name=`artist name`
   - Sample URL: [https://music.metason.net/artistinfo?name=Radiohead](https://music.metason.net/artistinfo?name=Radiohead)
 
@@ -50,7 +50,7 @@ ArtistInfo is available as App for iOS and macOS as well as a Web front-end at [
 - Data was collected in 2019 by Web crawling of
   - best-of lists from music community Web sites
   - top ratings of e-commerce Web sites selling music (e.g., Amazon)
-- More details on Albums is available via
+- More details on albums is available via
   - Universal URL: https://music.metason.net/artistinfo?name=`artist name`&title=`album title`
   - Sample URL: [https://music.metason.net/artistinfo?name=Radiohead&title=Man%20Of%20War](https://music.metason.net/artistinfo?name=Radiohead&title=Man%20Of%20War)
 
@@ -67,7 +67,7 @@ Sales data from the Recording Industry Association of America (RIAA).
 
 ## Info Vis Process
 
-Crreating convincing Info Vis is typically an iterative process:
+Creating convincing Info Vis is typically an iterative process:
 
 1. Data Processing
    - Data Acquisition and Extraction
@@ -79,7 +79,7 @@ Crreating convincing Info Vis is typically an iterative process:
 3. Presentation Authoring
    - Story creation: open questions, interesting insights, messages, ...
    - Layout: chart type(s), dimensions, data mappings, ...
-   - Styling: color palletes, typography
+   - Styling: color palettes, typography
    - Text messages: title, subtitle, captions, annotations, highlights
    - Interactions & animations (optional, not for this lab work)
 4. Back to step 1 or 2 to improve information visualization
@@ -170,8 +170,8 @@ All good data visualizations start with a good question.
 - Who gets more famous: Artists or Bands?
   - Already done: see `Artists versus Bands` below
   - Sample code: [infovis/artistsBands.py](infovis/artistsBands.py)
-- Get individual artists more famous than bands in recent years?
-  - Already done: see `Famous Mussicians and Bands over the Last 100 Years` below
+- Do individual artists get more famous than bands in recent years?
+  - Already done: see `Famous Musicians and Bands over the Last 100 Years` below
   - Sample code: [infovis/artistsOverTime.py](infovis/artistsOverTime.py)
 - What are the most used words in album titles?
   - Already done: see `Most Used Words in Title of Recommended Albums`below
@@ -192,9 +192,9 @@ All good data visualizations start with a good question.
 
 ## Sample Information Visualization
 
-When preparing visualizations for an audience (for a report, a company presentation, a Web page, ...), attention must be paid to many details. You therefore want to have control over the details of your generated charts. A very prominent data vis library used in the Python community is **matplotlib**. It is by the way the vis library under the hood of pandas plotting functionality. Pandas internaly calls matplotlib functions to create charts.
+When preparing visualizations for an audience (for a report, a company presentation, a Web page, ...), attention must be paid to many details. You therefore want to have control over the details of your generated charts. A very prominent data vis library used in the Python community is **matplotlib**. It is by the way the vis library under the hood of pandas plotting functionality. Pandas internally calls matplotlib functions to create charts.
 
-Matplotlib has many plotting methods that make nearly any kind of chart imaginable (an exception is the visualization of hierarchical data like tree structures). Via an object-oriented interface you have control over all apects of data charts (layout, size, color, text, fonts, axis, ticks, etc.). This makes matplotlib very powerful but not easy to learn. Take this as a challenge ...
+Matplotlib has many plotting methods that make nearly any kind of chart imaginable (an exception is the visualization of hierarchical data like tree structures). Via an object-oriented interface you have control over all aspects of data charts (layout, size, color, text, fonts, axis, ticks, etc.). This makes matplotlib very powerful but not easy to learn. Take this as a challenge ...
 
 ### Styling
 
@@ -234,7 +234,7 @@ Start your lab work ...
 ### Setup Your Environment
 
 1. Clone this repository to your computer
-2. Install [panda](https://pandas.pydata.org) and [matplotlib](https://matplotlib.org) when not already done
+2. Install [pandas](https://pandas.pydata.org) and [matplotlib](https://matplotlib.org) when not already done
 3. Run the sample code
    - Hint: where necessary fix the file path to the data to match the current working directory of your IDE
    - For analytics tasks the code is run as Jupyter notebook to interactively explore the data (charts are not saved)
