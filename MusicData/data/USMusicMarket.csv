@@ -1,4 +1,12 @@
 format,year,value
+8-Track,1965,100.0
+8-Track,1966,300.0
+8-Track,1967,910.0
+8-Track,1968,1620.0
+8-Track,1969,1950.0
+8-Track,1970,2250.0
+8-Track,1971,2240.0
+8-Track,1972,2200.0
 8-Track,1973,2815.68
 8-Track,1974,2848.01
 8-Track,1975,2770.41
@@ -142,6 +150,15 @@ CD Single,2017,1.54
 CD Single,2018,0.16
 CD Single,2019,0.18
 CD Single,2020,0.40
+Cassette,1964,20.0
+Cassette,1965,55.0
+Cassette,1966,80.0
+Cassette,1967,100.0
+Cassette,1968,120.0
+Cassette,1969,190.0
+Cassette,1970,270.0
+Cassette,1971,340.0
+Cassette,1972,400.0
 Cassette,1973,437.61
 Cassette,1974,452.20
 Cassette,1975,469.50
@@ -476,7 +493,30 @@ Kiosk,2017,2.35
 Kiosk,2018,2.00
 Kiosk,2019,1.59
 Kiosk,2020,1.20
-LP/EP,1973,7174.52
+LP/EP,1950,2050
+LP/EP,1951,2150
+LP/EP,1952,2210
+LP/EP,1953,2380
+LP/EP,1954,2460
+LP/EP,1955,2500
+LP/EP,1956,3050
+LP/EP,1957,3150
+LP/EP,1958,3570
+LP/EP,1959,3770
+LP/EP,1960,4060
+LP/EP,1961,4350
+LP/EP,1962,4640
+LP/EP,1963,4930
+LP/EP,1964,5220
+LP/EP,1965,5510
+LP/EP,1966,5800
+LP/EP,1967,5990
+LP/EP,1968,6190
+LP/EP,1969,6600
+LP/EP,1970,6910
+LP/EP,1971,7100
+LP/EP,1972,6600
+LP/EP,1973,6874.52
 LP/EP,1974,7031.86
 LP/EP,1975,7056.70
 LP/EP,1976,7472.01
@@ -1049,7 +1089,30 @@ Synchronization,2017,242.06
 Synchronization,2018,290.69
 Synchronization,2019,276.26
 Synchronization,2020,265.20
-Vinyl Single,1973,1094.03
+Vinyl Single,1950,900
+Vinyl Single,1951,850
+Vinyl Single,1952,800
+Vinyl Single,1953,860
+Vinyl Single,1954,920
+Vinyl Single,1955,990
+Vinyl Single,1956,1050
+Vinyl Single,1957,1100
+Vinyl Single,1958,1190
+Vinyl Single,1959,1200
+Vinyl Single,1960,1200
+Vinyl Single,1961,1100
+Vinyl Single,1962,1100
+Vinyl Single,1963,1150
+Vinyl Single,1964,1100
+Vinyl Single,1965,1050
+Vinyl Single,1966,1050
+Vinyl Single,1967,1000
+Vinyl Single,1968,1050
+Vinyl Single,1969,1000
+Vinyl Single,1970,1050
+Vinyl Single,1971,1000
+Vinyl Single,1972,920
+Vinyl Single,1973,974.03
 Vinyl Single,1974,1006.03
 Vinyl Single,1975,1005.05
 Vinyl Single,1976,1101.26

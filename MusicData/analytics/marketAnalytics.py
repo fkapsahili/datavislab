@@ -61,7 +61,7 @@ revenues.plot.bar(figsize=(10, 14), title='Revenue of US Recordings in Mio $')
 # analyse revenue per format
 formats = df.groupby(['format', 'year'])['value'].sum().unstack().T
 #print(formats.head(10))
-formats.plot.bar(stacked=True, figsize=(10, 14), title='Revenue of US Recordings per Forrmat in Mio $')
+formats.plot.bar(stacked=True, figsize=(10, 14), title='Revenue of US Recordings per Format in Mio $')
 
 # aggregate formats related to music albums
 formats['Vinyl'] = formats['LP/EP'] + formats['Vinyl Single']
@@ -70,7 +70,7 @@ formats['Music Casssette'] = formats['Cassette'] + formats['Cassette Single']
 formats['Download'] = formats['Download Album'] + formats['Download Single'] + formats['SoundExchange Distributions']
 formats['Streaming'] = formats['Limited Tier Paid Subscription'] + formats['On-Demand Streaming (Ad-Supported)'] + formats['Other Ad-Supported Streaming'] + formats['Paid Subscription']
 
-filtered = formats[['Vinyl', 'Music Casssette', 'Compact Disc', 'Download', 'Streaming']]
+filtered = formats[['Vinyl', '8-Track', 'Music Casssette', 'Compact Disc', 'Download', 'Streaming']]
 filtered.plot.area(stacked=True, figsize=(10, 8), title='Revenue of US Music Recordings per Media in Mio $')
 
 # Percentage of music market
