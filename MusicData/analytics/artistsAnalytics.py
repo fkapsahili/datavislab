@@ -11,10 +11,19 @@ ANALYTICS OF ARTISTS
 # libraries
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV/JSON file I/O
+import matplotlib.pyplot as plt # only used to set bgcolor of figure
+
+plt.rcParams.update({
+    "figure.facecolor": (1.0, 1.0, 1.0, 1.0),  # white with no transparency
+    "savefig.facecolor": (1.0, 1.0, 1.0, 1.0)  # white with no transparency
+})
 
 # ---- data prep ----
 
 # load data frame
+# Hint: Relative path works when executeed as Jupyter notebook.
+#       Where necessary fix the file path to match the current working 
+#       direectory of your IDE by removing '../' or using an absolute path.
 df = pd.read_json('../data/famousArtists.json') # get dataframe
 
 print("Analyze famousArtists.json")
@@ -63,7 +72,7 @@ print(first20)
 print('\nIndividual musicians vs music groups counted:')
 print(df.groupby('isGroup')['isGroup'].count().sort_values(ascending=False))
 genres = df.groupby('isGroup')['isGroup'].value_counts().unstack()
-genres.plot.bar(figsize=(10, 10), title='Individual Artists vs. Music Bands')
+genres.plot.bar(title='Individual Artists vs. Music Bands')
 
 # analyse countries
 print('\nCountries counted and sorted:')
@@ -94,6 +103,5 @@ filteredGenre2.plot.bar(stacked=True, figsize=(10, 10), title='Genres in Top 6 C
 criterion3 = (df['country'].isin(['US', 'GB', 'JM', 'CA', 'FR', 'DE'])) & (df['genre'].isin(['Jazz', 'Rock', 'Pop', 'Electronic', 'R&B', 'Indie']))
 filteredGenre3 = df[criterion3].groupby('genre')['country'].value_counts().unstack().T
 filteredGenre3.plot.bar(stacked=True, figsize=(10, 10), title='Top 5 Genres in Top 6 Countries')
-
 
 # %%

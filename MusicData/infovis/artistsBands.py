@@ -13,6 +13,8 @@ import pandas as pd # data processing, CSV/JSON file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
 
 # load data frame
+# Hint: Where necessary fix the file path to match the current working 
+#       direectory of your IDE by removing '../' or using an absolute path.
 df = pd.read_json('data/famousArtists.json') # get dataframe
 
 # styling
@@ -64,7 +66,7 @@ for i in ab_ratio.index:
                    color='black')
 
 # title & subtitle
-fig.text(0.0275,0.86,'Artists and Bands Distribution', fontfamily='serif',fontsize=15, fontweight='bold')
+fig.text(0.0275,0.86,'Artists versus Bands', fontfamily='serif',fontsize=15, fontweight='bold')
 fig.text(0.0275,0.74,'Individual musicians get more likely famous than bands.',fontfamily='serif',fontsize=12)  
 fig.text(0.2, 0.03, 'Data Source: https://music.metason.net/famousArtists.html', fontsize=9, fontfamily='sans-serif', color=color3)
 

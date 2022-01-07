@@ -29,6 +29,8 @@ def startYear(lifespan, isGroup):
             return dt.datetime.strptime(str(int(lifespan[0:4]) + 20), '%Y').year
         
 # load data frame
+# Hint: Where necessary fix the file path to match the current working 
+#       direectory of your IDE by removing '../' or using an absolute path.
 df = pd.read_json('data/famousArtists.json') # get dataframe
 
 # data cleansing
@@ -107,11 +109,11 @@ plt.annotate("",
 plt.annotate("Career Building Gap", xy =(2001.5, 31), xycoords ='data', fontsize=11, weight='bold')
 fig.text(0.74, 0.52, 
 '''There is a career building 
-gap of ~20 years before you 
-get famous. This is the time 
-of releasing new albums 
-and going on tours to 
-become well-known.
+gap of ~20 years before  
+artists get famous. This is   
+the time of releasing new  
+albums and going on tours  
+to become well-known.
 '''
 , fontsize=12, fontweight='light', fontfamily='serif')
 #plt.arrow( 2011, 41, 0, -5, fc="k", ec="k", head_width=0.9, head_length=2, edgecolor ='green')

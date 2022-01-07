@@ -5,7 +5,7 @@
 Created on Wed Jan 5 08:46:26 2022
 @author: Philipp Ackermann
 
-ANALYTICS OF ARTISTS
+ENHANCED ANALYTICS OF ARTISTS
 """
 
 # libraries
@@ -13,6 +13,12 @@ import numpy as np # linear algebra
 import pandas as pd # data processing, CSV/JSON file I/O
 import datetime as dt
 import gender
+import matplotlib.pyplot as plt # only used to set bgcolor of figure
+
+plt.rcParams.update({
+    "figure.facecolor": (1.0, 1.0, 1.0, 1.0),  # white with no transparency
+    "savefig.facecolor": (1.0, 1.0, 1.0, 1.0)  # white with no transparency
+})
 
 # Calculate year when career start
 # For individual artists, we add assumed 20 years to their birthdate
@@ -56,6 +62,9 @@ def getGender(fullname, isGroup):
 # ---- data prep ----
 
 # load data frame
+# Hint: Relative path works when executeed as Jupyter notebook.
+#       Where necessary fix the file path to match the current working 
+#       direectory of your IDE by removing '../' or using an absolute path.
 df = pd.read_json('../data/famousArtists.json') # get dataframe
 
 print("Enhance famousArtists.json")
