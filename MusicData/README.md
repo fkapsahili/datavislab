@@ -164,6 +164,24 @@ Visual Data Mining is a critical component in exploratory data analysis. You qui
 
 ---
 
+### Revenue Data
+
+![](analytics/PNG/revenueRecordings.png)
+
+---
+
+![](analytics/PNG/revenuePerFormat.png)
+
+---
+
+![](analytics/PNG/revenueMusic.png)
+
+---
+
+![](analytics/PNG/revenuePercentage.png)
+
+---
+
 ## Interesting Questions and Potential Insights
 
 All good data visualizations start with a good question.
