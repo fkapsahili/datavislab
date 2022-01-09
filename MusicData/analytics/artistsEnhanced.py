@@ -34,9 +34,13 @@ def startYear(lifespan, isGroup):
         else:
             return dt.datetime.strptime(str(int(lifespan[0:4]) + 20), '%Y').year
 
-def endYear(lifespan, currentYear):
+def endYear(lifespan, defaultYear=np.nan):
     if lifespan[0] == '*':
-        return dt.datetime.strptime(currentYear, '%Y').year
+        if np.isnan(defaultYear):
+            return np.nan
+        if defaultYear.length() != 4:
+            return np.nan
+        return dt.datetime.strptime(defaultYear, '%Y').year
     else:
         return dt.datetime.strptime(lifespan[5:], '%Y').year
     
@@ -69,7 +73,7 @@ df = pd.read_json('../data/famousArtists.json') # get dataframe
 
 print("Enhance famousArtists.json")
 print("==========================")
-
+df.info()
 # Cleanup of multiple-values 
 df['genre'] = df['genres'].str.split(", ").str[0]
 df['instr'] = df['instrs'].str.split(", ").str[0]
@@ -96,7 +100,7 @@ print("cleaned records:  " + str(len(df)))
 
 # data enhancing: year when career started
 df['start'] = df.apply(lambda row: startYear(row.lifespan, row.isGroup), axis = 1)
-df['end'] = df.apply(lambda row: endYear(row.lifespan, "2020"), axis = 1)
+df['end'] = df.apply(lambda row: endYear(row.lifespan), axis = 1)
 df['gender'] = df.apply(lambda row: getGender(row.artist, row.isGroup), axis = 1)
 
 df.info()

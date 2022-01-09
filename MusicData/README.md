@@ -58,11 +58,11 @@ ArtistInfo is available as App for iOS and macOS as well as a Web front-end at [
 
 Sales data from the Recording Industry Association of America (RIAA).
 
-- 70 years of sales by media, from vinyl to streaming
-- Data from 1973-2020: [data/USMusicMarket.csv](data/USMusicMarket.csv)
-- Source: https://www.riaa.com/u-s-sales-database/
+- 70 years of sales revenues by media, from vinyl to streaming
+- Data: [data/USMusicMarket.csv](data/USMusicMarket.csv)
+- Data Source from 1973-2020: https://www.riaa.com/u-s-sales-database/
+- Data Source from 1950-1972: values are estimated from different sources
 - Revenue values are in Millions USD (adjusted for inflation)
-- Data from 1950-1972 are estimated from different sources
 
 ---
 
@@ -164,7 +164,7 @@ Visual Data Mining is a critical component in exploratory data analysis. You qui
 
 ---
 
-### Revenue Data
+### Market Data
 
 ![](analytics/PNG/revenueRecordings.png)
 
@@ -201,10 +201,13 @@ All good data visualizations start with a good question.
 - Do US vs. UK albums releases differ in genre over years?
 - Do most used words in albums differ a lot between US and UK?
 - Do technical innovations (CD, MP3 downloads, streaming) have an influence on the music market?
-- Are there relevant gender aspects in recommended albums?
+- Are there gender aspects in recommended albums?
 - Recommendation score: what are means or distributions per genre?
 - Do Jazz artists live longer than Rock musicians?
 - At which age of the artist have famous albums typically been released?
+- Do subgenres of "Rock" such as "Punk, Grunge, Metal, ...) show some interesting patterns?
+- What are the most or less dominant music instruments per genre?
+- Are there famous artists playing harp?
 - ...
 
 ---
@@ -223,7 +226,7 @@ The charts might be used on the Metason Web site where most of the data is comin
 
 ![](infovis/PNG/colorPalette.png)
 
-Using well-thougt typography and a consistent color palette gives your work credibility and keeps the reader engaged.
+Using well-thought-through typography and a consistent color palette gives your work credibility and keeps the reader engaged.
 
 ### Some Stories
 
