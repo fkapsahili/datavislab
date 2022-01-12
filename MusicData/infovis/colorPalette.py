@@ -12,6 +12,9 @@ import matplotlib.pyplot as plt
 from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 from matplotlib.cbook import get_sample_data
 import seaborn
+from pathlib import Path
+
+script_dir = Path(__file__).resolve().parent
 
 # styling
 color1 = "#640019"  # bordeau red
@@ -59,7 +62,7 @@ ax.spines["left"].set_visible(False)
 
 # add company logo
 fn1 = get_sample_data(
-    "/Users/philipp/Documents/zhaw/bachelor/DS_VDSS/code/infovis/images/metason.png",
+    script_dir.joinpath("images/metason.png"),
     asfileobj=False,
 )
 logoimg = plt.imread(fn1, format="png")
@@ -78,7 +81,7 @@ ax.add_artist(ab1)
 
 # add app logo
 fn2 = get_sample_data(
-    "/Users/philipp/Documents/zhaw/bachelor/DS_VDSS/code/infovis/images/ArtistInfo.png",
+    script_dir.joinpath("images/ArtistInfo.png"),
     asfileobj=False,
 )
 appimg = plt.imread(fn2, format="png")
