@@ -1,4 +1,3 @@
-#%% # tag to run as Jupyter notebook 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -7,6 +6,7 @@ Created on Wed Jan 5 08:46:26 2022
 
 ENHANCED ANALYTICS OF ARTISTS
 """
+#%% # tag to run as Jupyter notebook 
 
 # libraries
 import numpy as np # linear algebra

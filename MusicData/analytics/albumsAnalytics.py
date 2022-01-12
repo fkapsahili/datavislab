@@ -1,4 +1,3 @@
-#%% # tag to run as Jupyter notebook 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -7,6 +6,7 @@ Created on Tue Jan  4 08:36:26 2022
 
 ANALYTICS OF ALBUMS
 """
+#%% # tag to run as Jupyter notebook 
 
 # libraries
 import numpy as np # linear algebra
