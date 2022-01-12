@@ -16,8 +16,8 @@ import datetime as dt
 
 # Calculate year when career started
 # For individual artists, we add assumed 20 years to their birthdate
-def startYear(lifespan, isGroup):
-    if isGroup == 1:
+def start_year(lifespan, is_group):
+    if is_group == 1:
         if lifespan[0] == "*":
             return dt.datetime.strptime(lifespan[1:5], "%Y").year
         else:
@@ -43,7 +43,7 @@ df.dropna(inplace=True)
 print("cleaned lifespan: " + str(len(df)))
 
 # data enhancing: year when career started
-df["year"] = df.apply(lambda row: startYear(row.lifespan, row.isGroup), axis=1)
+df["year"] = df.apply(lambda row: start_year(row.lifespan, row.isGroup), axis=1)
 df.info()
 
 # styling

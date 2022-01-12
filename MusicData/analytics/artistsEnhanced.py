@@ -24,8 +24,8 @@ plt.rcParams.update(
 
 # Calculate year when career start
 # For individual artists, we add assumed 20 years to their birthdate
-def startYear(lifespan, isGroup):
-    if isGroup == 1:
+def start_year(lifespan, is_group):
+    if is_group == 1:
         if lifespan[0] == "*":
             return dt.datetime.strptime(lifespan[1:5], "%Y").year
         else:
@@ -37,19 +37,19 @@ def startYear(lifespan, isGroup):
             return dt.datetime.strptime(str(int(lifespan[0:4]) + 20), "%Y").year
 
 
-def endYear(lifespan, defaultYear=np.nan):
+def end_year(lifespan, default_year=np.nan):
     if lifespan[0] == "*":
-        if np.isnan(defaultYear):
+        if np.isnan(default_year):
             return np.nan
-        if defaultYear.length() != 4:
+        if default_year.length() != 4:
             return np.nan
-        return dt.datetime.strptime(defaultYear, "%Y").year
+        return dt.datetime.strptime(default_year, "%Y").year
     else:
         return dt.datetime.strptime(lifespan[5:], "%Y").year
 
 
-def getGender(fullname, isGroup):
-    if isGroup == 1:
+def get_gender(fullname, is_group):
+    if is_group == 1:
         return np.nan
     name = (
         fullname.replace("Dr. ", "")
@@ -125,9 +125,9 @@ df.dropna(inplace=True)
 print(f"cleaned records:  {len(df)}")
 
 # data enhancing: year when career started
-df["start"] = df.apply(lambda row: startYear(row.lifespan, row.isGroup), axis=1)
-df["end"] = df.apply(lambda row: endYear(row.lifespan), axis=1)
-df["gender"] = df.apply(lambda row: getGender(row.artist, row.isGroup), axis=1)
+df["start"] = df.apply(lambda row: start_year(row.lifespan, row.isGroup), axis=1)
+df["end"] = df.apply(lambda row: end_year(row.lifespan), axis=1)
+df["gender"] = df.apply(lambda row: get_gender(row.artist, row.isGroup), axis=1)
 
 df.info()
 first20 = df.head(20)

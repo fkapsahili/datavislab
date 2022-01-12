@@ -66,17 +66,17 @@ print(f"cleaned years:    {len(df)}")
 # analyse genre
 print("\nGenre categories counted and sorted:")
 print(df.groupby("genre")["year"].count().sort_values(ascending=False))
-genreOverTime = df.groupby("genre")["year"].value_counts().unstack().T
-genreOverTime.plot.area(
+genre_over_time = df.groupby("genre")["year"].value_counts().unstack().T
+genre_over_time.plot.area(
     stacked=True, figsize=(10, 10), title="Recommended Music Albums"
 )
 
 # filter year range
 criterion = (df["year"] > "1999") & (df["year"] < "2016")
-filteredGenreOverTime = (
+filtered_genre_over_time = (
     df[criterion].groupby("genre")["year"].value_counts().unstack().T
 )
-filteredGenreOverTime.plot.area(
+filtered_genre_over_time.plot.area(
     stacked=True, figsize=(10, 10), title="Recommended Music Albums between 2000-2015"
 )
 
@@ -86,8 +86,8 @@ criterion2 = (
     & (df["year"] < "2016")
     & (df["genre"].isin(["Jazz", "Rock", "Pop", "Electronic", "R&B", "Indie"]))
 )
-filteredGenre2 = df[criterion2].groupby("genre")["year"].value_counts().unstack().T
-filteredGenre2.plot.area(
+filtered_genre2 = df[criterion2].groupby("genre")["year"].value_counts().unstack().T
+filtered_genre2.plot.area(
     stacked=True, figsize=(10, 10), title="Top 6 Genres of Recommended Music Albums"
 )
 

@@ -98,15 +98,15 @@ print(df.groupby("genre")["genre"].count().sort_values(ascending=False))
 genres = df.groupby("genre")["isGroup"].value_counts().unstack().T
 genres.plot.bar(stacked=True, figsize=(10, 10), title="Genres of Musicians and Bands")
 
-genresBand = df.groupby("genre")["isGroup"].value_counts().unstack()
-genresBand.plot.bar(
+genres_band = df.groupby("genre")["isGroup"].value_counts().unstack()
+genres_band.plot.bar(
     stacked=True, figsize=(10, 10), title="Split of Musicians and Bands per Genre"
 )
 
 # filter top 6 countries
 criterion2 = df["country"].isin(["US", "GB", "JM", "CA", "FR", "DE"])
-filteredGenre2 = df[criterion2].groupby("genre")["country"].value_counts().unstack().T
-filteredGenre2.plot.bar(
+filtered_genre2 = df[criterion2].groupby("genre")["country"].value_counts().unstack().T
+filtered_genre2.plot.bar(
     stacked=True, figsize=(10, 10), title="Genres in Top 6 Countries"
 )
 
@@ -114,8 +114,8 @@ filteredGenre2.plot.bar(
 criterion3 = (df["country"].isin(["US", "GB", "JM", "CA", "FR", "DE"])) & (
     df["genre"].isin(["Jazz", "Rock", "Pop", "Electronic", "R&B", "Indie"])
 )
-filteredGenre3 = df[criterion3].groupby("genre")["country"].value_counts().unstack().T
-filteredGenre3.plot.bar(
+filtered_genre3 = df[criterion3].groupby("genre")["country"].value_counts().unstack().T
+filtered_genre3.plot.bar(
     stacked=True, figsize=(10, 10), title="Top 5 Genres in Top 6 Countries"
 )
 
