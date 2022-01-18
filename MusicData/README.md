@@ -29,7 +29,7 @@ Any message deduced from this data does therefore not reflect universal facts bu
 
 The data on musicians, bands, and albums is sourced from the music database operated by Metason for their ArtistInfo application. Metason ([www.metason.net](https://www.metason.net)) is run by the author as a private project.
 
-ArtistInfo is available as App for iOS and macOS as well as a Web front-end at [music.metason.net](https://music.metason.net). The data for albums and artists is accessible via Web (see URLs below). More details on individual data records can be accesssed via the corresponding `ìd` or via Universal URL.
+ArtistInfo is available as App for iOS and macOS as well as a Web front-end at [music.metason.net](https://music.metason.net). Detailed information for albums and artists is accessible as Web page via Universal URL (see samples below).
 
 ### Artists
 
@@ -38,9 +38,12 @@ ArtistInfo is available as App for iOS and macOS as well as a Web front-end at [
   - Web: https://music.metason.net/famousArtists.html
 - Data was collected in 2019 by Web crawling of
   - top100 lists of music community Web sites
+  - unified with the information model of the Metason DB
 - More details on Atists is available via
-  - Universal URL: https://music.metason.net/artistinfo?name=`artist name`
+  - Universal URL: https://music.metason.net/artistinfo?name=`artist_name`
   - Sample URL: [https://music.metason.net/artistinfo?name=Radiohead](https://music.metason.net/artistinfo?name=Radiohead)
+- `instrs` data field contains music instruments played by musician (as abbreviations, comma-separated, ordered, main instrument first, empty when is group)
+- `genres` data field may have several (comma-separated) values which are sorted by relevance (main genre first).
 
 ### Albums
 
@@ -50,8 +53,9 @@ ArtistInfo is available as App for iOS and macOS as well as a Web front-end at [
 - Data was collected in 2019 by Web crawling of
   - best-of lists from music community Web sites
   - top ratings of e-commerce Web sites selling music (e.g., Amazon)
+  -  unified with the information model of the Metason DB
 - More details on Albums is available via
-  - Universal URL: https://music.metason.net/artistinfo?name=`artist name`&title=`album title`
+  - Universal URL: https://music.metason.net/artistinfo?name=`artist_name`&title=`album_title`
   - Sample URL: [https://music.metason.net/artistinfo?name=Radiohead&title=Man%20Of%20War](https://music.metason.net/artistinfo?name=Radiohead&title=Man%20Of%20War)
 
 ### US Music Industry Revenues
@@ -93,7 +97,8 @@ The good news:
 - Data Processing for the music data in this repository is already done for you
 - Content is already unified according to classifications for
   - Musical genres & styles: https://music.metason.net/genres.html
-  - Music instruments: https://music.metason.net/instruments.html - World regions & countries: https://music.metason.net/regions.html
+  - Music instruments: https://music.metason.net/instruments.html 
+  - World regions & countries: https://music.metason.net/regions.html
 - Data Analytics is prepared
   - Using __pandas__ for data mangling and simple data graphics
   - For all data sources there are templates available
@@ -190,7 +195,7 @@ All good data visualizations start with a good question.
   - Already done: see `Artists versus Bands` below
   - Sample code: [infovis/artistsBands.py](infovis/artistsBands.py)
 - Get individual artists more famous than bands in recent years?
-  - Already done: see `Famous Mussicians and Bands over the Last 100 Years` below
+  - Already done: see `Famous Musicians and Bands over the Last 100 Years` below
   - Sample code: [infovis/artistsOverTime.py](infovis/artistsOverTime.py)
 - What are the most used words in album titles?
   - Already done: see `Most Used Words in Title of Recommended Albums`below
