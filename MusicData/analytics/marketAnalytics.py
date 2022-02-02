@@ -25,7 +25,7 @@ plt.rcParams.update(
 # load data frame
 # Hint: Relative path works when executeed as Jupyter notebook.
 #       Where necessary fix the file path to match the current working
-#       direectory of your IDE by removing '../' or using an absolute path.
+#       directory of your IDE by removing '../' or using an absolute path.
 df = pd.read_csv(
     "../data/USMusicMarket.csv", header=0, encoding="utf8"
 )  # get dataframe

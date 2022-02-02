@@ -25,7 +25,7 @@ plt.rcParams.update(
 # load data frame
 # Hint: Relative path works when executeed as Jupyter notebook.
 #       Where necessary fix the file path to match the current working
-#       direectory of your IDE by removing '../' or using an absolute path.
+#       directory of your IDE by removing '../' or using an absolute path.
 df = pd.read_json("../data/recomAlbums.json")
 
 print("Analyze recomAlbums.json")

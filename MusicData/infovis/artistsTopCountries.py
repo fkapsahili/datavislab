@@ -22,7 +22,7 @@ plt.rcParams["figure.dpi"] = 144
 
 # load data frame
 # Hint: Where necessary fix the file path to match the current working
-#       direectory of your IDE by removing '../' or using an absolute path.
+#       directory of your IDE by removing '../' or using an absolute path.
 df = pd.read_json("data/famousArtists.json")  # get dataframe
 
 print("Analyze famousArtists.json")
