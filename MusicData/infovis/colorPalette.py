@@ -98,6 +98,7 @@ ab2 = AnnotationBbox(
 )
 ax.add_artist(ab2)
 
-plt.savefig("infovis/PNG/colorPalette.png")
-plt.savefig("infovis/SVG/colorPalette.svg")
+
+plt.savefig(script_dir.joinpath("PNG/colorPalette.png").as_posix())
+plt.savefig(script_dir.joinpath("SVG/colorPalette.svg").as_posix())
 plt.show()

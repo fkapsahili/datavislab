@@ -12,6 +12,12 @@ ANALYTICS OF US MUSIC MARKET
 import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV/JSON file I/O
 import matplotlib.pyplot as plt  # only used to set bgcolor of figure
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
+from utils.filefinder import find_file
+
 
 plt.rcParams.update(
     {
@@ -27,7 +33,7 @@ plt.rcParams.update(
 #       Where necessary fix the file path to match the current working
 #       directory of your IDE by removing '../' or using an absolute path.
 df = pd.read_csv(
-    "../data/USMusicMarket.csv", header=0, encoding="utf8"
+    find_file("USMusicMarket.csv"), header=0, encoding="utf8"
 )  # get dataframe
 
 print("Analyze USMusicMarket.csv")

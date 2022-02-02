@@ -12,6 +12,11 @@ INFO VIS: Top Countries where famous musicians are coming from
 import pandas as pd  # data processing, CSV/JSON file I/O (e.g. pd.read_csv)
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
+from utils.filefinder import find_file
 
 # styling
 color1 = "#640019"  # bordeau red
@@ -23,7 +28,7 @@ plt.rcParams["figure.dpi"] = 144
 # load data frame
 # Hint: Where necessary fix the file path to match the current working
 #       directory of your IDE by removing '../' or using an absolute path.
-df = pd.read_json("data/famousArtists.json")  # get dataframe
+df = pd.read_json(find_file("famousArtists.json"))  # get dataframe
 
 print("Analyze famousArtists.json")
 print("==========================")

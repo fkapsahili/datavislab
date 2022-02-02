@@ -12,6 +12,12 @@ ANALYTICS OF ALBUMS
 import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV/JSON file I/O
 import matplotlib.pyplot as plt  # only used to set bgcolor of figure
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
+from utils.filefinder import find_file
+
 
 plt.rcParams.update(
     {
@@ -23,10 +29,7 @@ plt.rcParams.update(
 # ---- data prep ----
 
 # load data frame
-# Hint: Relative path works when executeed as Jupyter notebook.
-#       Where necessary fix the file path to match the current working
-#       directory of your IDE by removing '../' or using an absolute path.
-df = pd.read_json("../data/recomAlbums.json")
+df = pd.read_json(find_file("recomAlbums.json"))
 
 print("Analyze recomAlbums.json")
 print("========================")

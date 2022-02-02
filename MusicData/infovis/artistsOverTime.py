@@ -13,6 +13,11 @@ import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV/JSON file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
 import datetime as dt
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
+from utils.filefinder import find_file
 
 # Calculate year when career started
 # For individual artists, we add assumed 20 years to their birthdate
@@ -32,7 +37,7 @@ def start_year(lifespan, is_group):
 # load data frame
 # Hint: Where necessary fix the file path to match the current working
 #       directory of your IDE by removing '../' or using an absolute path.
-df = pd.read_json("data/famousArtists.json")  # get dataframe
+df = pd.read_json(find_file("famousArtists.json"))  # get dataframe
 
 # data cleansing
 print("\nimported records: " + str(len(df)))

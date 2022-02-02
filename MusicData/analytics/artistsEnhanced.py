@@ -14,6 +14,12 @@ import pandas as pd  # data processing, CSV/JSON file I/O
 import datetime as dt
 import gender
 import matplotlib.pyplot as plt  # only used to set bgcolor of figure
+import sys
+from pathlib import Path
+
+sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
+from utils.filefinder import find_file
+
 
 plt.rcParams.update(
     {
@@ -92,10 +98,7 @@ def get_gender(fullname, is_group):
 # ---- data prep ----
 
 # load data frame
-# Hint: Relative path works when executeed as Jupyter notebook.
-#       Where necessary fix the file path to match the current working
-#       directory of your IDE by removing '../' or using an absolute path.
-df = pd.read_json("../data/famousArtists.json")  # get dataframe
+df = pd.read_json(find_file("famousArtists.json"))  # get dataframe
 
 print("Enhance famousArtists.json")
 print("==========================")
