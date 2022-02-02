@@ -50,9 +50,9 @@ for i in df.columns:
     null_rate = df[i].isna().sum() / len(df) * 100
     empty_rate = df[i].eq("").sum() / len(df) * 100
     if null_rate > 0:
-        print(f"{i} null rate: {round(null_rate,2)}%")
+        print(f"{i} null rate: {null_rate:.2f}%")
     if empty_rate > 0:
-        print(f"{i} empty rate: {round(empty_rate,2)}%")
+        print(f"{i} empty rate: {empty_rate:.2f}%")
 
 # data cleansing
 print(f"\nimported records: {len(df)}")
