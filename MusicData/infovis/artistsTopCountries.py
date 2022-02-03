@@ -12,10 +12,6 @@ INFO VIS: Top Countries where famous musicians are coming from
 import pandas as pd  # data processing, CSV/JSON file I/O (e.g. pd.read_csv)
 import numpy as np
 import matplotlib.pyplot as plt
-import sys
-from pathlib import Path
-
-sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
 from utils.filefinder import find_file
 
 # styling

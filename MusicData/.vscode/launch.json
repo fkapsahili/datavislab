@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "analytics.albumsAnalytics",
+            "type": "python",
+            "request": "launch",
+            "module": "analytics.albumsAnalytics"
+        },
+        {
+            "name": "analytics.artistsAnalytics",
+            "type": "python",
+            "request": "launch",
+            "module": "analytics.artistsAnalytics"
+        },
+        {
+            "name": "analytics.artistsEnhanced",
+            "type": "python",
+            "request": "launch",
+            "module": "analytics.artistsEnhanced"
+        },
+        {
+            "name": "analytics.marketAnalytics",
+            "type": "python",
+            "request": "launch",
+            "module": "analytics.marketAnalytics"
+        },
+        {
+            "name": "infovis.artistsBands",
+            "type": "python",
+            "request": "launch",
+            "module": "infovis.artistsBands"
+        },
+        {
+            "name": "infovis.artistsOverTime",
+            "type": "python",
+            "request": "launch",
+            "module": "infovis.artistsOverTime"
+        },
+        {
+            "name": "infovis.artistsTopCountries",
+            "type": "python",
+            "request": "launch",
+            "module": "infovis.artistsTopCountries"
+        },
+        {
+            "name": "infovis.colorPalette",
+            "type": "python",
+            "request": "launch",
+            "module": "infovis.colorPalette"
+        },
+        {
+            "name": "infovis.wordsInTitle",
+            "type": "python",
+            "request": "launch",
+            "module": "infovis.wordsInTitle"
+        },
+    ]
+}

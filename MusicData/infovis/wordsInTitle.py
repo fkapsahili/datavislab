@@ -14,9 +14,10 @@ from wordcloud import WordCloud
 import pandas as pd  # data processing, CSV/JSON file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
 import matplotlib.colors as clrs
+from utils.filefinder import find_file
 
 # load data frame
-df = pd.read_json("data/recomAlbums.json")  # get dataframe
+df = pd.read_json(find_file("recomAlbums.json"))  # get dataframe
 
 # styling
 color1 = "#640019"  # bordeau red

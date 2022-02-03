@@ -12,10 +12,6 @@ ANALYTICS OF ALBUMS
 import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV/JSON file I/O
 import matplotlib.pyplot as plt  # only used to set bgcolor of figure
-import sys
-from pathlib import Path
-
-sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
 from utils.filefinder import find_file
 
 

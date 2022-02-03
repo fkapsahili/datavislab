@@ -13,10 +13,6 @@ import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV/JSON file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
 import datetime as dt
-import sys
-from pathlib import Path
-
-sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
 from utils.filefinder import find_file
 
 # Calculate year when career started

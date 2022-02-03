@@ -12,12 +12,14 @@ ENHANCED ANALYTICS OF ARTISTS
 import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV/JSON file I/O
 import datetime as dt
-import gender
-import matplotlib.pyplot as plt  # only used to set bgcolor of figure
-import sys
-from pathlib import Path
 
-sys.path.append(Path(__file__).resolve().parent.parent.as_posix())
+try:
+    __IPYTHON__
+    import gender  # if run as Jupyter Notebook
+except:
+    from . import gender  # if run as python -m analytics.artistsEnhanced
+
+import matplotlib.pyplot as plt  # only used to set bgcolor of figure
 from utils.filefinder import find_file
 
 
