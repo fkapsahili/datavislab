@@ -14,7 +14,7 @@ import pandas as pd  # data processing, CSV/JSON file I/O
 import datetime as dt
 
 try:
-    __IPYTHON__
+    __IPYTHON__  # type: ignore # disables PyLance warning
     import gender  # if run as Jupyter Notebook
 except:
     from . import gender  # if run as python -m analytics.artistsEnhanced
