@@ -72,7 +72,7 @@ Sales data from the Recording Industry Association of America (RIAA).
 
 ## Info Vis Process
 
-Crreating convincing Info Vis is typically an iterative process:
+Creating convincing Info Vis is typically an iterative process:
 
 1. Data Processing
    - Data Acquisition and Extraction
