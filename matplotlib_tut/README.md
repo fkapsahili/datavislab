@@ -1,11 +1,4 @@
-# Introduction
-This tutorial is a complete re-imagining of how one should teach users
-the matplotlib library. Hopefully, this tutorial may serve as inspiration
-for future restructuring of the matplotlib documentation. Plus, I have some
-ideas of how to improve this tutorial.
-
-Please fork and contribute back improvements! Feel free to use this tutorial
-for conferences and other opportunities for training.
+# Matplotlib Tutorial
 
 * [Part 0: Introduction To NumPy](https://github.zhaw.ch/wagb/datavislab/tree/main/matplotlib_tut/Matplotlib_Tut-Part0-Intro2NumPy.ipynb)
 * [Part 1: Overview of Matplotlib](https://github.zhaw.ch/wagb/datavislab/tree/main/matplotlib_tut/Matplotlib_Tut-Part1-Figures_Subplots_and_layouts.ipynb)
