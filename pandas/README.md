@@ -13,4 +13,7 @@ Practice further data handling, visualizations using [data from the video lectur
 
 ### Data Handling and Visualization
 - Change into the directory containing the sales data: `cd SalesAnalysis/Sales_Data`
-- Start Jupyter Notebook: `jupyter notebook
+- Start Jupyter Notebook: `jupyter notebook`
+
+### Tasks
+
