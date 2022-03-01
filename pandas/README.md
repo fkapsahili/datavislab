@@ -5,6 +5,7 @@ Study "[Solving real world data science tasks with Python Pandas!](https://www.y
 
 Please note:
 - There's a table of contents in the description, e.g. to [skip the intro](https://www.youtube.com/watch?v=eMOA1pPVUc4&t=82s).
+  Click "SHOW MORE" underneath the video.
 - Activate the subtitles
 - You can display the video at higher speed (Settings>Playback speed).
 
