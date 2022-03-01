@@ -8,6 +8,8 @@
 * [Part 5: Artists](https://github.zhaw.ch/wagb/datavislab/tree/main/matplotlib_tut/Matplotlib_Tut-Part5-Artists.ipynb)
 * [Part 6: mpl_toolkits](https://github.zhaw.ch/wagb/datavislab/tree/main/matplotlib_tut/Matplotlib_Tut-Part6-mpl_toolkits.ipynb)
 
+Note: Parts 0 and 6 are optional. You'll find the exercises within the Jupyter Notebooks.
+
 # Installation
 All you need is matplotlib jupyter installed.
 You can use your favorite Python package installer for this:
