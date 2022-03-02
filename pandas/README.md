@@ -9,6 +9,11 @@ Please note:
 - Activate the subtitles
 - You can display the video at higher speed (Settings>Playback speed).
 
+### Tasks
+- While watching the video, work along with the instructor. Make note when something surprpises you,
+  when you can think of a better solution, when you have questions: Right-click on the video timeline ("Copy video URL at current time")
+  and save the link together with your comment/question.
+
 ## Practical
 Practice further data handling, visualizations using [data from the video lecture](https://github.com/KeithGalli/Pandas-Data-Science-Tasks).
 
