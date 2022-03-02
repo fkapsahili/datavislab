@@ -27,4 +27,38 @@ Practice further data handling, visualizations using [data from the video lectur
 - Start Jupyter Notebook: `jupyter notebook`
 
 ### Tasks
+#### 'Or' in the field 'Order Date'
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=1311)
+- What might be going on here?
 
+#### Lambda within apply
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=2386)
+- How can you simplify Keith's solution?
+
+#### Adding State to the City
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=2503)
+- Unify the two functions into one (why?)
+
+### Incorrect x-Axis Tick Labels
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=2980)
+- Can you find a simpler solution?
+
+### Total Orders Per Hour
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=3137)
+- Create the chart for two cities of your choice
+  - How do you create a list of all cities?
+  - How do you create the plot for a particular city?
+
+### Avoiding 'SettingWithCopyWarning'
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=4047)
+- Can you find a way to avoid this warning?
+
+### Find Pairs of Products Bought Together
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=4314)
+- What could go wrong with Keith's approach?
+- How could the problem be circumvented?
+
+### Correlation Between Product Price and Quantity Ordered
+[Video Section](https://youtu.be/eMOA1pPVUc4?t=5064)
+Thanks to the plot Keith finds a negative correlation between product price and quantity ordered.
+- Can you find a way to quantify this correlation?
