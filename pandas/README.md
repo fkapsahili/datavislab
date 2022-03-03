@@ -14,11 +14,11 @@ Please note:
   when you can think of a better solution, when you have questions: Right-click on the video timeline ("Copy video URL at current time")
   and save the link together with your comment/question.
 
-## Practical
+## Lab Work
 Practice further data handling, visualizations using [data from the video lecture](https://github.com/KeithGalli/Pandas-Data-Science-Tasks).
 
 ### Data Acquisition
-- Make the project directory on my own computer: `mkdir <my_datavis_project_directory>`
+- Make the project directory on your own computer: `mkdir <my_datavis_project_directory>`
 - Change into the directory: `cd <my_datavis_project_directory>`
 - Clone the repository from the above video lecture: `git clone https://github.com/KeithGalli/Pandas-Data-Science-Tasks.git`
 
