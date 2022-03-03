@@ -15,7 +15,7 @@ Please note:
   and save the link together with your comment/question.
 
 ## Lab Work
-Practice further data handling, visualizations using [data from the video lecture](https://github.com/KeithGalli/Pandas-Data-Science-Tasks).
+Goal: Practice further data handling and visualizations using [data from the video lecture](https://github.com/KeithGalli/Pandas-Data-Science-Tasks).
 
 ### Data Acquisition
 - Make the project directory on your own computer: `mkdir <my_datavis_project_directory>`
