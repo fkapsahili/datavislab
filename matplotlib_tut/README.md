@@ -10,7 +10,22 @@
 
 Note: Parts 0 and 6 are optional. 
 
+# Exercises
 You'll find the exercises within the Jupyter Notebooks.
+
+The expected format to hand in your solutions to the exercises is a PDF file.
+For each exercise provide the title of the respective Notebook as a heading and the exercise's title
+as a subheading.
+After the heading, provide the Python code with your solution and a screenshot of the graphic generated.
+Your text is expected to be copy-pastable into the Jupyter Notebook containing the respective exercise.
+
+Example: Your solution to the exercise at the bottom of notebook ["Matplotlib_Tut-Part1-Figures_Subplots_and_layouts.ipynb"](https://github.zhaw.ch/wagb/datavislab/tree/main/matplotlib_tut/Matplotlib_Tut-Part1-Figures_Subplots_and_layouts.ipynb)
+will start with the heading `Matplotlib_Tut-Part1-Figures_Subplots_and_layouts` followed by subheading `Quick Exercise: Exercise 1.1`.
+Next follows the entire Python code of this Cell, including your solution which comes right after the comment line:
+```Python
+# Can you figure out what to do next to plot x vs y1, y2, and y3 on one figure?
+```
+
 
 # Installation
 All you need is matplotlib jupyter installed.
