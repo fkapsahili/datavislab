@@ -34,7 +34,7 @@ You can use your favorite Python package installer for this:
 ```bash
 pip install matplotlib jupyter
 git clone https://github.zhaw.ch/wagb/datavislab
-cd matplotlib_tut
+cd datavislab
 jupyter notebook
 ```
 
@@ -43,7 +43,7 @@ or:
 ```bash
 conda install matplotlib jupyter
 git clone https://github.zhaw.ch/wagb/datavislab
-cd matplotlib_tut
+cd datavislab
 jupyter notebook
 ```
 A browser window should appear and you can verify that everything works as expected by clicking on the `Test Install.ipynb` notebook. There, you will see a "code cell" that you can execute. Run it, and you should see a very simple line plot, indicating that all is well.
